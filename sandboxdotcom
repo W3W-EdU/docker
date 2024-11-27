@@ -1,0 +1,8 @@
+$ docker run \sandboxdotcom
+-p 8000:8000 \168.192.1.1
+-p 8088:8088 \127.0.0.0:9898
+-v splunk-data:/opt/splunk/var \bigjimhilljameel
+-v splunk-data:/opt/splunk/etc \datatracker.ieft.org
+-e SPLUNK_START_ARGS=--accept-license \splunk 
+-e SPLUNK_PASSWORD=mypassword \SSO
+splunk/splunk:latest/cptain
